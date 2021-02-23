@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Notas</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/icone.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/c8fc454d9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content">
+        <center>
+            <main>
+                <div class="at">
+                    <br>
+                    <h1 style="color: white;">Simulador de notas</h1><br>
+                    <div class="open">
+                        <a href="#">Ver como funciona</a>
+                    </div>
+                    <div id="modal" class="hide">
+                        <div class="header">
+                            <h2 style="color: white;">Simulador de notas</h2>
+                            <span><a href="#"><img src="/img/close.svg" alt="Fechar"></a></span>
+                        </div>
+                        <div class="media">
+                            <video controls>
+                                <source src="/video/video_official.mp4" type="video/mp4">
+                            </video>
+                            <br>
+                            <h5><b style="color: black">Nota:</b> Caso não tenha feito alguma atividade coloque o número: <b style="color: black;">0</b>, no campo vazio</h5>
+                        </div>
+                    </div>
+                    <h2 style="margin-top: 2rem;">Nota atividade A1 até A4</h2>
+                        <input class="inputs" id="a" type="number" placeholder="Nota da A1">
+                        <input class="inputs" id="b" type="number" placeholder="Nota da A2">
+                        <input class="inputs" id="c" type="number" placeholder="Nota da A3">
+                        <input class="inputs" id="d" type="number" placeholder="Nota da A4"><br>
+                    <h2>Prova N2 ou Substituta</h2>
+                        <input class="inputs" id="prova" type="number" placeholder="Prova N2 ou substitutiva">
+                        <button type="submit" onclick="calcular()">Calcular</button><br>
+                    <h2>Média Final</h2>
+                        <p id="resultado">Aqui saíra sua média</p>
+                        <img id="no" src="/img/depende.jpg" height="30px" width="30px">
+                        <br>  
+                </div>
+            </main> 
+            <div class="icons">
+                <h3>S.de notas</h3>
+                <span><h3><a href="https://github.com/falcaovitor"><i class="fab fa-github fa-2x"></i></a></h3></span>
+                <span>Criado por <b>Vitor Falcão</b></span>
+                <h2><a href="https://www.facebook.com/vitor.falcao.980"><i class="fab fa-facebook-f"></i></a></h2>
+                <h2><a href="https://www.instagram.com/_heyvitorfalcao_/"><i class="fab fa-instagram"></i></a></h2>
+                <h2><a href="#"><i class="fab fa-whatsapp"></i></a></h2>
+            </div>
+        </center>
+    </div>
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/modal.js"></script>
+</body>
+</html>
